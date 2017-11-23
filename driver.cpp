@@ -115,6 +115,7 @@ void simulateTime(Garden& garden) {
 		
 int main () {
   Garden gardenObj;
+  cout << "Welcome to the Garden\nCoded by Itay Tamary\n" << endl;
   manageMenu(gardenObj);
   return 0;
 }
