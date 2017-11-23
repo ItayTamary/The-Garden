@@ -1,0 +1,76 @@
+Rubric for proj4
+Student: itay1
+DO NOT REPLY TO THIS EMAIL. Please email your TA if you have grading questions:
+        hash4@umbc.edu
+
+-------------------------------------------------------------------------------
+
+Part 1: Basic Functionality and Class Implementation (25 points):
+##############################
+3/3 compiles and loads main menu as provided
+6/6 uses functions as defined in project (no additional functions, methods added)
+6/6 should use polymorphism and inheritance in plant and flower, vegetable, and tree.
+10/10 Logic for each type of plant should use the correct aging:
+    Flower - Seedling, Medium-sized, Fully-Mature, Fully-Mature+Flowering, Drop Flowers, Die
+    Vegetable - Seedling (til 3), Medium-sized(@4), Fully-Mature(@5), Harvested
+    Tree - Seedling (til 12), Sapling (til 24), Pole (til 36), Mature (after 36) + Fruiting
+-------------------------------------------------------------------------------
+
+Part 2: Garden (14 Points)
+##############################
+7/7 Allows plants (of any type) to be added to a garden
+7/7 Tick forces each plant in the garden to age by one tick (every plant is different)
+
+--------------------------------------------------------------------------------
+
+Part 3: Fruit (3 points)
+#############################
+3/3 Dynamically allocated and destroyed
+
+--------------------------------------------------------------------------------
+
+Part 4: Test Cases (24 points)
+#############################
+8/8 test1 - Using the provided makefile, use "make test1" which should simulate building a single
+           flower for 10 months. Check the output - there will be variability due to the
+           randomness of disease. The flower (most likely) should be dead. Make sure that
+           it exits gracefully.
+
+8/8 test2 - Using the provided makefile, use "make test2" which should simulate building a field
+           of vegetables for 10 months. Check the output - there will be variability due to the
+           randomness of disease. The vegetable (most likely) should be harvested. Make sure
+           that it exits gracefully.
+
+8/8 test3 - Using the provided makefile, use "make test3" which should simulate building a field
+           of each type of plant (flower, vegetable, and tree) and simulate 150 ticks (months).
+           Check the output - there will be variability due to the
+           randomness of disease. The flower should be dead. The vegetable should be harvested.
+           The tree *MAY* be alive at 150. It should have fruits (the number is unknown). Make
+           sure that it exits gracefully. If this segfaults, use your best judgement on why.
+
+--------------------------------------------------------------------------------
+
+Part 5: Memory Leaks (6 points)
+############################
+2/2 Check that test1 has no memory leaks
+####    Run "make val1" and see if there are any leaks
+2/2 Check that test2 has no memory leaks
+####    Run "make val2" and see if there are any leaks
+2/2 Check that test3 has no memory leaks
+####    Run "make val3" and see if there are any leaks
+
+--------------------------------------------------------------------------------
+
+Part 6: Following overall guidelines (8 points):
+#########################################
+4/4 -- commenting (function headers, etc.)
+4/4 -- other coding standards
+
+--------------------------------------------------------------------------------
+
+Comments:
+##############################
+Great Job
+
+
+TOTAL: 80.0/80.0
